@@ -32,18 +32,23 @@ document.getElementById('key').addEventListener('click', function (event){
     }
     
 })
-// document.getElementById('submit').addEventListener('click', function (){
-//     const g = document.getElementById('display-pin').value = getPin();
-//     const s = document.getElementById('number').value = 
-//     if(g == s){
-//         const s = document.getElementById('s');
-//         s.style.display = 'block';
 
-//     }
-//     else{
-//         const fail = document.getElementById('f');
-//         fail.style.display = 'block';
-//     }
-// })
+function verifyPin(){
+    const pin = document.getElementById('display-pin').value;
+    const typedNumber = document.getElementById('number').value;
+    const success = document.getElementById('success');
+    const fail = document.getElementById('f');
+    if(pin == typedNumber){
+        
+        success.style.display = 'block';
+        fail.style.display = 'none';
+    }
+    else{
+        
+        fail.style.display = 'block';
+        success.style.display = 'none';
+     }
+}
+
 
 
