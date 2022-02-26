@@ -16,6 +16,7 @@ document.getElementById('pin-button').addEventListener('click', function (){
     const pin = getPin();
     document.getElementById('display-pin').value = pin;
 })
+// clearing the typed input
 document.getElementById('key').addEventListener('click', function (event){
     const number = event.target.innerText;
     const typed = document.getElementById('number');
