@@ -8,15 +8,18 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h2 class="text-center pt-5 text-light">Pin Generator </h2>
+    <!-- heading -->
+    <h1 class="text-center pt-5 text-light fw-bold">Pin <span class="text-danger">Generator</span> </h1>
     <div class="container">
         <div class="row py-5">
+            <!-- random pin generator area -->
             <div class="col-md-6">
                 <div class="pin-generator half-width rounded">
                     <input class="form-control" type="text" id="display-pin">
                     <button class="generate-btn" id="pin-button">Generate Pin</button>
                 </div>
             </div>
+            <!-- Pin type area -->
             <div class="col-md-6">
                 <div class="input-section half-width rounded">
                     <input class="form-control" type="text" id="number">
@@ -44,15 +47,15 @@
                             </div>
                             <div>
                                 <button onclick="verifyPin()" type="submit" class="submit-btn" id="submit">Submit</button>
-                                <p class="action-left">3 try left</p>
+                                <!-- <p class="action-left">3 try left</p> -->
                             </div>
                     </div>
                 </div>
             </div>
         </div>
         <div class="notify-section">
-            <p class="notify" id="f">❌ Pin Didn't Match, Please try again</p>
-            <p class="notify" id="success">✅ Pin Matched... Secret door is opening for you</p>
+            <p class="notify" id="fail">❌ Pin Didn't Match, Please try again</p>
+            <p class="notify" id="success">✅ Pin Matched..... Secret door is opening for you</p>
         </div>
     </div>
     <script src="js/main.js"></script>
